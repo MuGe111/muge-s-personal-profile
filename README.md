@@ -1,2 +1,2 @@
-# muge-s-personal-profile
+# muge
 This is Wang Yina Personal profile
