@@ -1,0 +1,493 @@
+/* 公共样式 */
+body {
+    background-color: #ecf0f1;
+    font-family: cursive;
+    color:#666;
+    line-height: 2;
+    margin:0;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+/* ------------------------------------------------首页样式-------------------------------------------------- */
+/* 整个页面的样式，在许多个页面都有用到 */
+div#container {
+    height:100%;
+    z-index: 0;
+    overflow:auto; 
+}
+/* 首页左侧基本信息部分样式 */
+div#container div#cont_1{
+    position: relative;
+    width:50%;
+    height:100%;  
+    background: url(../img/bg.jpg) rgba(0,0,0,0.5) no-repeat center;
+    /*下面一行的代码 css3颜色叠加，正片叠底，此处增加了遮罩 */
+    background-blend-mode: multiply;
+    background-size:cover;
+    float: left;
+}
+div#cont_1 div.info{
+    z-index: 10;
+}
+div#cont_1 div.name{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+div.name h1{
+    color: #fff;
+}
+div.name h1 span{
+    color: #47a3da;
+}
+/* 左侧部分名字下方的基本信息样式 */
+div.info div.more_info{
+    display: table;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 基本信息_名称的样式 */
+div.info .more_info .info-title{
+    display: inline-block;
+    font-weight: 500;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    color:#fff;
+}
+/* 基本信息_内容的样式 */
+div.info .more_info .info-body{
+    color:rgba(238,238,238,0.84);
+}
+/* 右侧导航栏样式 */
+div#container div#cont_2{
+    background-color:#fff;
+    width:50%;
+    height:100%;
+    float: left;
+}
+/* 导航栏头像样式，所有页面有用到 */
+div.avatar{
+    margin:0 auto;
+    width:140px;
+    height:140px;
+    border-radius: 50%;
+}
+div.avatar img{
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.34),-1px 1px 1px rgba(0,0,0,0.34);
+    max-width: 100%;
+    display: block;
+    border: 0;
+    border-radius: 50%;
+}
+/* 首页导航栏文字链接部分样式 */
+div#container div.inner{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%);
+    padding:0 1em;
+    width:50%;
+}
+/* 首页和其他页面导航栏文字链接部分都具备的样式 */
+div.inner h1,div.nav_list h1{
+    margin-top:40px;
+    margin-bottom:30px;
+    margin:0;
+    padding:0;
+    font-size:24px;
+    text-align: center;
+}
+div.inner ul,div.nav_list ul{
+    margin:0;
+    padding: 0;
+    margin:20px 0 10px 0;
+    list-style: none;
+    text-align: center;
+}
+/* 首页和其他页面导航栏文字链接部分都使用到的样式类 */
+.menu_list a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    color:#000;
+    font-weight: 500;
+    padding:5px 0;
+}
+/* 鼠标移动到文字链接部分字体变色 */
+.menu_list a:hover{
+color:#47a3da;
+}
+/* 当前页文字链接字体加粗变色 */
+.menu_list .on{
+    color:#47a3da;
+    font-weight: bold;
+}
+/*----------------------------------------------------------关于我 about_me页面主要样式---------------------------------------- */
+/* 除首页外其余页面导航栏部分的样式 */
+div#container div#nav{
+    background-color: #fff;
+    width:386px;
+    height:100%;
+    position: fixed;
+}
+div#nav div.nav_list{
+    top:50%;
+    bottom: 0;
+    margin-left:107px;
+    transform:translateY(-50%);
+    background-color: #fff;
+    padding:0 1em;
+    position: fixed;
+}
+/* 页面右侧主体部分样式，"关于我"、"获奖经历"、"志愿经历"、"小测试"页面都有用到 */
+div#container div#main{
+    width:850px;
+    margin:40px;
+    margin-left: 426px;
+    color: #666;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+div#main div#main_page{
+ 
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+div.page_current{
+    
+    margin-top: 0px;
+}
+div.content{
+    padding-bottom: 60px;
+    background-color: #fff;
+    
+}
+div.content img{
+    display: block;
+    width:100%;
+    border: 0;
+}
+div#main div.primary{
+    padding:0 30px;
+    position: absolute;
+}
+div.primary p{
+    margin-top: 30px;
+    font-size:16px;
+    color:#111;
+    text-indent: 2em;
+}
+/* 个人能力部分样式 */
+div.ability{
+    margin-top: 15px;
+
+}
+/* 子标题样式 */
+div.primary div.subtitle{
+    background-image: url(../img/border/border.png);
+    width:155px;
+    height:48px;
+    background-size: 100% 100%;
+    margin: 20px 0;
+}
+div.subtitle h3{
+   margin:10px 0 0 25px;
+   letter-spacing: 0.5em;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-block;
+}
+/* 个人能力具体内容样式 */
+div.item{
+    margin-top: 17px;
+    line-height: 2.0;
+    font-size: 14px;
+    color:#555;
+    min-height:200px;
+}
+div.item p{
+    line-height: 2.0;
+    font-size:14px;
+    margin-bottom: 6px;
+}
+/* 简历表样式 */
+div.item .table{
+    border:solid #fff;
+    border-width: 1px 0px 0px 1px;
+    background: #f0f0f0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.td{
+    text-align:center;
+    border:solid #fff;
+    border-width: 0px 1px 1px 0px;
+    padding:2px 10px;
+}
+.table a{
+    color:#5A5A5A;
+}
+/* 专家推荐部分样式 */
+div.expert_info{
+    margin-left: 20px;
+    float:left;
+}
+div.expert_info h4{
+    font-size: 18px;
+    color:#222;
+    margin:20px 0 5px 0;
+}
+div.expert_info h5{
+    color: rgba(0,0,0,0.47);
+    margin:5px 0 5px 0;
+}
+div.recom_cont{
+    background-image: url(../img/border/recom.png);
+    background-size: 100% 100%;
+    width:650px;
+    float: left;
+}
+div.recom_cont p{
+    text-indent: 2em;
+    width:600px;
+    margin:15px 0 0 35px;
+}
+/* --------------------------------------------------------------页脚样式---------------------------------------------------- */
+.footer div.footer_cont{
+    float: right;
+    width:50px;
+    height:100%;
+    position: absolute;
+    bottom: 0;
+    right:0;
+    writing-mode: tb-rl;
+    word-wrap: break-word;
+}
+.footer div.footer_cont p{
+    text-align: center;
+    font-size: 16px;
+    color: #111;
+    margin-bottom:20px ;
+    font-family: sans-serif;
+  
+}
+/*-------------------------------------------------------- 获奖证明award.html主要样式--------------------------------------- */
+/* 大标题样式 */
+div.primary div.title{
+    background-image: url(../img/border/title.png);
+    width:200px;
+    height:91px;
+    background-size: 100% 100%;
+    margin: 20px;
+    position: absolute;
+}
+div.title h2{
+    font-size:20px;
+    margin:50px 0 0 30px;
+    letter-spacing: 18px;
+}
+/* 分割线样式 */
+hr.linestyle{
+    width:96%;
+    margin-top: 140px;
+    margin-bottom: 30px;
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
+}
+/* 每一行获奖信息样式 */
+div.primary div.row{
+    margin: 10px -15px 0 -15px;
+    display: table;
+}
+/* 同一行中每一列样式 */
+div.primary div.col{
+    width:46%;
+    float: left;
+    position: relative;
+    padding:0 15px;
+}
+div.col div.col_item{
+    margin-bottom: 50px;;
+}
+/* 奖项证明图片样式 */
+div.award_img{
+    position: relative;
+}
+div.award_img img{
+    display: block;
+    width: 100%;
+    border:1px solid rgba(0,0,0,0.08)
+}
+/* 奖项证明说明样式 */
+div.award_cont{
+    height:72px;
+    padding:15px;
+    width:91.9%;
+    background-color:#d2e6ff;
+    border:1px solid rgba(0,0,0,0.08);
+    border-top:none;
+}
+div.award_cont p{
+    margin:0;
+    font-size: 14px;
+    color:#111;
+    text-align: right;
+}
+div.award_cont h3{
+    margin-bottom: 8px;
+    padding:0;
+    text-align: right;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 1.1;
+    color:#333;
+}
+/* --------------------------------------------------------志愿经历volunteer.html主要样式--------------------------------- */
+/* 每一项经历主要样式 */
+div.exp_item{
+    margin:10px 0;
+}
+div.exp_info{
+    position: relative;
+    margin-left: 40px;
+    padding-left: 15px;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: #47a3da;
+    width:50%;
+    float: left;
+}
+/* 志愿服务时间样式 */
+div.exp_item div.date{
+    position: relative;
+    line-height: 1;
+}
+div.exp_item div.date span{
+    font-size:14px;
+    font-weight: 500;
+    color:rgba(0,0,0,0.5);
+    letter-spacing: 0.5px;
+}
+/* 志愿服务简介样式 */
+div.exp_item div.exp_cont h4{
+    font-weight: 700;
+    line-height: 1.1;
+    color: #47a3da;
+    font-size: 18px;
+    margin:10px 0;
+}
+div.exp_item div.exp_cont p{
+    font-size: 15px;
+    color:#111;
+    margin:0 0 10px;
+}
+/* 志愿服务活动图片样式 */
+div.exp_item div.exp_img{
+    width:35%;
+    float:left;
+    margin-left:20px;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.34),-1px 1px 1px rgba(0,0,0,0.34);
+}
+/* ---------------------------------------------------照片墙photo.html主要样式---------------------------------------- */
+/* 右侧照片墙样式，添加滚动条 */
+div#photo{
+    overflow-y: scroll;
+    position: absolute;
+    width: 1000px;
+    height:550px;
+    margin-left:480px;
+    top:10%;
+    bottom:10%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+div#photo div.photo_container{
+    margin:0 auto;
+    padding: 0;
+}
+/* 每一张照片展示部分样式 */
+div#photo div.photo_item{
+    width:31%;
+    float:left;
+    margin:16px 0 0 16px;
+    position: relative;
+    
+}
+div.photo_item img{
+    max-width: 100%;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 11px;
+}
+/* --------------------------------------------------------小测试页survey.html主要样式------------------------------------- */
+/* 调查页标题样式 */
+div.survey h1{
+    font-size: 20px;
+    text-align: center;
+    padding: 40px 0 10px 0;
+}
+/* 问卷样式 */
+form td{
+	display: table-cell;
+}
+form tr {
+    display: table-row;
+    vertical-align: middle;
+    border-color: inherit;
+}
+/* 每一个问题区域的样式 */
+.question-table{
+    width:80%;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+	border:1px solid #cce8ff;
+	padding: 1px;
+	background-color: #fff;
+    border-collapse: separate;
+}
+/* 每一个问题选项的样式 */
+.answer{
+    padding:11px 24px 16px 77px;
+	text-align: left;
+}
+.answer ul li{
+	display:list-item;
+	list-style-type: none;
+}
+.question{
+	font-size: 16px;
+	font-weight: bold;
+	background-color: #cce8ff;
+	text-align: left;
+    padding:6px 10px;
+}
+/* 提交按钮的样式 */
+form .submit_btn{
+    text-align: center;
+}
+.submit_btn button{
+	display: inline-block;
+	margin-right: .1em;
+	padding: .4em 1em;
+	line-height: 1.4;
+	cursor: pointer;
+	border: 1px solid #aed0ea;
+	border-radius: 6px;
+	background: #d7ebf9;
+	color: #0070a3;
+	font-weight: bold;
+	margin:0;
+}

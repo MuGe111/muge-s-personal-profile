@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/app.js"></script>
+    <title>小测试</title>
+
+</head>
+
+<body>
+    <div id="container">
+        <!-- 左侧导航区，除首页外5个页面保持一致 -->
+        <div id="nav">
+            <div class="nav_list">
+                <div class="cont_2_1">
+                    <div class="avatar">
+                        <img src="img/me/wyn.jpg" alt="profile">
+                    </div>
+                </div>
+                <h1>王毅娜</h1>
+                <div class="cont_2_2">
+                    <div id="menu">
+                        <ul class="menu_list">
+                            <li>
+                                <a href="/">首页</a>
+                            </li>
+                            <li>
+                                <a href="/about _me.html" class="">关于我</a>
+                            </li>
+                            <li>
+                                <a href="/award.html" class="">获奖经历</a>
+                            </li>
+                            <li>
+                                <a href="/volunteer.html" class="">志愿经历</a>
+                            </li>
+                            <li>
+                                <a href="/photo.html" class="">照片墙</a>
+                            </li>
+                            <li>
+                                <a href="/survey.html" class="on">小测试</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧内容区 -->
+        <div id="main" style="height:1350px">
+            <div id="main_page">
+                <section class="page-current">
+                    <div class="content">
+                        <div class="survey">
+                            <!-- 测试标题 -->
+                            <div class="survey_title">
+                                <h1>看完前面的资料，你了解我了吗？来做一个小测试吧！☺</h1>
+                            </div>
+                            <!-- 测试内容 -->
+                            <form name="fm">
+                                <div>
+                                    <!-- 通过table分开设置标题和选项样式，样式更为丰富 -->
+                                    <table class="question-table">
+                                        <tr>
+                                            <td class="question">
+                                                1. 我的大学：
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <!-- 正确的选项value设为1，错误选项设为0，点击提交后，通过js对提交的表单内容进行判断，给予反馈 -->
+                                            <td class="answer">
+                                                <ul>
+                                                    <li>
+                                                        <input id="school1" type="radio" name="school" value="0" />
+                                                        <label for="school1">中南大学</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="school2" type="radio" name="school" value="0" />
+                                                        <label for="school2">中南民族大学</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="school3" type="radio" name="school" value="1" />
+                                                        <label for="school">中南财经政法大学</label>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="question-table">
+                                        <tr>
+                                            <td class="question">
+                                                2. 我的家乡：
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="answer">
+                                                <ul>
+                                                    <li>
+                                                        <input id="home1" type="radio" name="home" value="1" />
+                                                        <label for="home1">山西长治</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="home2" type="radio" name="home" value="0" />
+                                                        <label for="home2">陕西西安</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="home3" type="radio" name="home" value="0" />
+                                                        <label for="home3">山东济南</label>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="question-table">
+                                        <tr>
+                                            <td class="question">
+                                                3. 毕业时间：
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="answer">
+                                                <ul>
+                                                    <li>
+                                                        <input id="time1" type="radio" name="time" value="0" />
+                                                        <label for="time1">2020</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="time2" type="radio" name="time" value="0" />
+                                                        <label for="time2">2017</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="time3" type="radio" name="time" value="1" />
+                                                        <label for="time3">2021</label>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="question-table">
+                                        <tr>
+                                            <td class="question">
+                                                4. 我喜欢的明星（多选）：
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="answer">
+                                                <ul>
+                                                    <li>
+                                                        <input id="star1" type="checkbox" name="star" value="1" />
+                                                        <label for="star1">赵丽颖</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="satr2" type="checkbox" name="star" value="1" />
+                                                        <label for="star2">陈伟霆</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="star3" type="checkbox" name="star" value="1" />
+                                                        <label for="star3">宋茜</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="star4" type="checkbox" name="star" value="1" />
+                                                        <label for="star4">Lisa</label>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <table class="question-table">
+                                        <tr>
+                                            <td class="question">
+                                                5. 我参加的志愿活动（多选）：
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="answer">
+                                                <ul>
+                                                    <li>
+                                                        <input id="vol1" type="checkbox" name="volunteer" value="1" />
+                                                        <label for="vol1">2019年武汉军运会</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="vol2" type="checkbox" name="volunteer" value="1" />
+                                                        <label for="vol2">特步企鹅跑</label>
+                                                    </li>
+                                                    <li>
+                                                        <input id="vol3" type="checkbox" name="volunteer" value="1" />
+                                                        <label for="vol3">中南财经政法大学70周年校庆</label>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- 提交按钮 -->
+                                </div>
+                                <p class="submit_btn">
+                                    <button value="提交" onclick="sub()">提交</button>
+                                </p>
+                            </form>
+                        </div>
+
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer_cont">
+                <p>&copy;2020 WangYina. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
