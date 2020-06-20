@@ -269,7 +269,7 @@ div.recom_cont p{
     height:100%;
     position: absolute;
     bottom: 0;
-    right:1%;
+    right:0.8%;
     writing-mode: tb-rl;
     word-wrap: break-word;
 }
@@ -407,7 +407,7 @@ div#photo{
     position: absolute;
     width: 1000px;
     height:550px;
-    margin-left:480px;
+    margin-left:460px;
     top:10%;
     bottom:10%;
     background: #fff;
