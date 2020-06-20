@@ -269,7 +269,7 @@ div.recom_cont p{
     height:100%;
     position: absolute;
     bottom: 0;
-    right:0;
+    right:1%;
     writing-mode: tb-rl;
     word-wrap: break-word;
 }
